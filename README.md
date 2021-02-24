@@ -108,6 +108,9 @@ Grover.configure do |config|
     timeout: 0, # Timeout in ms. A value of `0` means 'no timeout'
     launch_args: ['--font-render-hinting=medium'],
     wait_until: 'domcontentloaded' 
+    connect_options: { // or connect to an existing browser
+      url: 'http://127.0.0.1:9222'
+    },
   }
 end
 ```
